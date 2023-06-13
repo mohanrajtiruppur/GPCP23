@@ -1,0 +1,144 @@
+<html>
+<head>
+<style>
+body{
+background-image:url("bg.jpg");
+background-repeat:repeat;
+font-family:calibri;
+font-size:22px;
+color:#FFF;
+}
+table{
+margin-left:20%;
+margin-right:15%;
+border:1px solid green;
+border-radius:5px;
+}
+input{
+padding:10px 10px 10px 10px;
+}
+input #uname, #bio {
+border-radius:5px;
+}
+input:focus {
+  border: 3px solid green;
+}
+
+</style>
+<title>Internship Training Form</title>
+
+<script>
+function validate()
+{
+var suname=f.uname.value;
+var soption=f.residence.value;
+var slength=suname.length;
+alert(slength);
+}
+
+</script>
+
+
+
+
+
+</head>
+<body>
+<h2 style="text-align:center">Internship Training Form</h2>
+<form method="GET" action="" name="f">
+<table>
+<tr>
+<td>
+<label> Name : </td>
+<td>
+<input type="text" name ="uname" required size="10" id="uname" placeholder="Enter name">  </td>
+</tr>
+
+<tr>
+<td>
+<label> Short Bio :</label></td> 
+<td><textarea rows="3" cols="15" id="bio"></textarea></td>
+</tr>
+
+<tr>
+<td>Gender</td>
+<td>
+<input type="radio" name="gen" value="m"> Male </input>
+
+<input type="radio" name="gen" value="f"> Female </input>
+
+</td>
+</tr>
+<tr></tr>
+<tr>
+<td>Hobbies</td>
+<td>
+<input type="checkbox" name="hob" value="b"> Browsing</input>
+
+<input type="checkbox" name="hob" value="s"> Singing</input>
+
+<input type="checkbox" name="hob" value="p"> Playing</input>
+
+<input type="checkbox" name="hob" value="g"> Gardening</input>
+
+</td>
+</tr>
+
+<tr>
+<td>Residence</td>
+<td>
+<select name="residence">
+<option>Select City</option>
+<option>Erode</option>
+<option>Tiruppur</option>
+<option>Kunnathur</option>
+<option>Perundurai</option>
+<option>Gobichettipalayam</option>
+<option>Salem</option>
+
+</select>
+</td>
+</tr>
+
+<tr>
+<td>Email</td>
+<td>
+<input type="email"></td>
+</tr>
+
+
+<tr>
+<td>Distance from Residence in km</td>
+<td>
+<input type="range" value="50" step="5" max="200"></td>
+</tr>
+
+
+
+
+
+
+<tr>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td><input type="button" name="submit" value="Submit" onClick="validate()"></td>
+
+<td><input type="reset" name="submit" value="Clear"></td>
+
+</tr>
+
+
+</table>
+
+
+
+
+
+</form>
+</body>
+</html>
+
+
